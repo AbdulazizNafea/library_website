@@ -135,15 +135,15 @@ $result = $stmt->get_result();
 
   <div class="card">
 
-   <a href="  "> <img class="card-img-top" src="images/21x21.jpg" alt="Card image cap"> 
+   <a href=""> <img class="card-img-top" src="images/21x21.jpg" alt="Card image cap"> 
     <div class="card-body">
-      <h5 class="text-right"><?php echo $userfound['namebook']; ?></h5>
+      <h5 class="text-right"><?php echo htmlspecialchars($userfound['namebook']); ?></h5>
       </a>
-      <p class="text-right"><?php echo $userfound['options'];?></p>
-    </div>
+      <p class="text-right"><?php echo htmlspecialchars($userfound['options']);?></p>
+    </div> 
     <div class="text-center">
         <div class="card-footer" >
-          <small class="text-right"><?php echo $userfound['username']; ?></small>
+          <small class="text-right"><?php echo htmlspecialchars($userfound['username']); ?></small>
         </div>
     </div>
     
